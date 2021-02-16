@@ -19,8 +19,8 @@ comment
 
 body,
 html {
-  font-family: "Roboto", sans-serif;
-  background: #212121;
+  font-family: "Montserrat", sans-serif;
+  background: #76b29b;
   color: #fafafa;
   font-size: 14px;
   line-height: 22px;
@@ -35,7 +35,7 @@ h5,
 h6 {
   line-height: 110%;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: #fff;
 }

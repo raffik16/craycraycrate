@@ -2,50 +2,7 @@
   <header id="home">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark">
-        <nuxt-link to="/" class="navbar-brand">
-          <h2>RK</h2>
-        </nuxt-link>
-        <button
-          @click="myFilter"
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarTogglerDemo"
-          aria-controls="navbarTogglerDemo"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          id="navbarTogglerDemo"
-          class="collapse navbar-collapse"
-          :class="{ show: isActive }"
-        >
-          <ul class="navbar-nav ml-auto">
-            <!-- <li class="nav-item active">
-                            <a href="#home" class="nav-link">Home</a>
-                        </li> -->
-            <li class="nav-item">
-              <nuxt-link
-                to="/#portfolioSection"
-                class="nav-link portfolio-li"
-                :prefetch="false"
-                >Home</nuxt-link
-              >
-            </li>
-            <li class="nav-item">
-              <nuxt-link to="/about" class="nav-link" :prefetch="false"
-                >About</nuxt-link
-              >
-            </li>
-            <li class="nav-item">
-              <a href="mailto:raffi.website@gmail.com" class="nav-link"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </div>
+        <img src="~static/images/logo.png" alt="logo" />
       </nav>
     </div>
   </header>
@@ -115,6 +72,10 @@ header {
   .navbar .navbar-toggler {
     background: none;
   }
+
+  img {
+    width: 100%;
+  }
 }
 
 nav.navbar.navbar-expand-lg.navbar-dark {
@@ -124,5 +85,7 @@ nav.navbar.navbar-expand-lg.navbar-dark {
   left: 0;
   top: 0;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 </style>

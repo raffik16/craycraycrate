@@ -1,61 +1,61 @@
-
 export default {
   /*
-  ** Nuxt rendering mode
-  ** See https://nuxtjs.org/api/configuration-mode
-  */
-  mode: 'universal',
+   ** Nuxt rendering mode
+   ** See https://nuxtjs.org/api/configuration-mode
+   */
+  mode: "universal",
   /*
-  ** Nuxt target
-  ** See https://nuxtjs.org/api/configuration-target
-  */
-  target: 'server',
+   ** Nuxt target
+   ** See https://nuxtjs.org/api/configuration-target
+   */
+  target: "server",
   /*
-  ** Headers of the page
-  ** See https://nuxtjs.org/api/configuration-head
-  */
+   ** Headers of the page
+   ** See https://nuxtjs.org/api/configuration-head
+   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: process.env.npm_package_name || "",
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        hid: "description",
+        name: "description",
+        content: process.env.npm_package_description || ""
+      }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Bitter:wght@600&display=swap'
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;1,400&display=swap"
       }
     ]
   },
   /*
-  ** Global CSS
-  */
-  css: [
-    '~/static/bootstrap.min.css',
-    '~/static/styles.css'
+   ** Global CSS
+   */
+  css: ["~/static/bootstrap.min.css", "~/static/styles.css"],
+  /*
+   ** Plugins to load before mounting the App
+   ** https://nuxtjs.org/guide/plugins
+   */
+  plugins: [
+    // '~plugins/vue-js-modal.js'
   ],
   /*
-  ** Plugins to load before mounting the App
-  ** https://nuxtjs.org/guide/plugins
-  */
- plugins: [
-  // '~plugins/vue-js-modal.js'
-],
-  /*
-  ** Auto import components
-  ** See https://nuxtjs.org/api/configuration-components
-  */
+   ** Auto import components
+   ** See https://nuxtjs.org/api/configuration-components
+   */
   components: true,
   /*
-  ** Nuxt.js dev-modules
-  */
-  buildModules: [
-  ],
+   ** Nuxt.js dev-modules
+   */
+  buildModules: [],
   /*
-  ** Nuxt.js modules
-  */
+   ** Nuxt.js modules
+   */
   modules: [
     // ['nuxt-vue-material', {
     //   theme: 'default-dark',
@@ -63,9 +63,9 @@ export default {
     // }],
   ],
   /*
-  ** Build configuration
-  ** See https://nuxtjs.org/api/configuration-build/
-  */
+   ** Build configuration
+   ** See https://nuxtjs.org/api/configuration-build/
+   */
   build: {
     // publicPath: 'dist/',
   },
@@ -73,6 +73,6 @@ export default {
     // Options
   },
   generate: {
-    dir: 'public'
-  },
-}
+    dir: "public"
+  }
+};
