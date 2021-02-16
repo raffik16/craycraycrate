@@ -8,7 +8,7 @@
     }"
   >
     <a
-      href="https://instagram.com/ranchedruffles"
+      href="https://instagram.com/craycraycrate"
       target="_blank"
       class="ig-a"
       @click="hoverOverIg = true"
@@ -19,7 +19,7 @@
     </a>
     <a
       class="contact-a"
-      href="mailto:raffi.website@gmail.com"
+      href="mailto:service@craycraycrate.com"
       @click="hoverOverContact = true"
       @mouseenter="hoverOverContact = true"
       @mouseleave="hoverOverContact = false"
